@@ -54,7 +54,7 @@
                 <div class="col-4 d-flex align-items-center">
                     <img src="assets/images/logo/logo.png" alt="logo" class="img-fluid logo">
                 </div>
-                <div class="col-8 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="col-8 d-flex flex-column justify-content-center align-items-center">
                     <div class="w-100">
                         <h4 class="text-center text-md-start mb-1 mb-md-0">Sant Tapasvi Narayan Das Shikshan Sansthan</h4>
                         <div class="d-flex flex-wrap justify-content-center justify-content-md-start align-items-center gap-3 text-white small">
@@ -72,15 +72,7 @@
                             </span>
                         </div>
                     </div>
-                    <!-- Modern Search Bar -->
-                    <form class="d-none d-md-flex ms-md-3" role="search" style="max-width: 250px; width: 100%;">
-                        <div class="input-group">
-                            <input class="form-control form-control-sm rounded-start-pill bg-light border-0" type="search" placeholder="Search..." aria-label="Search">
-                            <button class="btn btn-primary btn-sm rounded-end-pill px-3" type="submit">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </div>
-                    </form>
+                    
                     <!-- Mobile Search Icon -->
                     <div class="d-flex d-md-none mt-2 justify-content-end w-100">
                         <button class="btn btn-outline-light btn-sm p-1" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSearchBar" aria-expanded="false" aria-controls="mobileSearchBar">
@@ -250,6 +242,33 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
                         </li>
+                        <!-- Search Icon -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#navbarSearchModal" aria-label="Search" onclick="setTimeout(function(){ document.getElementById('navbarSearchInput').focus(); }, 500);">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+                        <!-- Search Modal -->
+                        <div class="modal fade" id="navbarSearchModal" tabindex="-1" aria-labelledby="navbarSearchModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="navbarSearchModalLabel">Search</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="search">
+                                            <div class="input-group">
+                                                <input id="navbarSearchInput" class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                                                <button class="btn btn-primary" type="submit">
+                                                    <i class="bi bi-search"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
