@@ -12,6 +12,7 @@
     text-align: center;
 }
 
+
 #top-bar .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -19,6 +20,8 @@
     flex-wrap: wrap;
     padding: 0 16px;
 }
+
+
 
 #top-bar .container-fluid img {
     height: 100px;
